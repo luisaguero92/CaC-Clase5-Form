@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- comentario-->
+    <form action="/action_page.php" target="_blank" method="GET">
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">HTML</label><br>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="css">CSS</label><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <label for="javascript">JavaScript</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="/action_page.php" target="_blank" method="POST">
+        Consulta <textarea name="comments" rows="10" cols="20" readonly></textarea>
+        <input type="text" id="usertex" name="usertext"> <br><br>   
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+
+            <!--Nombre de usuario y clave-->
+            <label for="fusername">Username</label>
+            <input type="text" id="fusername" name="fusername" maxlength="8"><br><br>
+            <label for="fpaswords">Password</label>
+            <input type="password" id="fpaswords" name="fpaswords"><br><br>
+
+            <input type="checkbox" name="cond" required>Acepto los términos y condiciones.
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
